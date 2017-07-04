@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RUA-03</string>
+
+    <string name="title_activity_GEODemo">APLIKACJA</string>
+
+    <string name="action_settings">Ustawienia</string>
+    <string name="disconnected">Rozłączono</string>
+    <string name="product_information">Informacje o produkcie</string>
+    <string name="connection_loose">Status: Brak Urządzenia</string>
+    <string name="sdk_version">Wersja: 1.0.0</string>
+
+    <!-- GEO with map testing activity-->
+    <string name="title_activity_geo_with_map_testing">GeoWithMapTestingActivity</string>
+    <string name="demo_desc_geo_with_map">Geo System With Map</string>
+
+    <string name="item_top_left_title">Kategoria</string>
+    <string name="item_top_title">EventName</string>
+    <string name="Message_WaitStatus">Status aktualizacji</string>
+
+    <string name="title_activity_geo_testing">GeoTestingActivity</string>
+    <string name="demo_desc_geo">System GEO</string>
+    <string name="geo_get_surrounding_nfz">Get Surrounding NFZ</string>
+    <string name="geo_get_location_nfz">Pobierz lokację NFZ</string>
+    <string name="geo_get_unlock_nfz">Pobierz stan NFZ</string>
+    <string name="geo_refresh_nfz">Odśwież lokalne dane</string>
+    <string name="geo_unlock_nfzs">Odblokuj NFZ</string>
+    <string name="geo_get_unlock_nfzs">Get Unlock NFZs</string>
+    <string name="geo_login">Logowanie</string>
+    <string name="geo_logout">Wyloguj</string>
+    <string name="enabled_geo">Włącz GEO</string>
+    <string name="start_simulator">Początek symulacji</string>
+    <string name="stop_simulator">Koniec symulacji</string>
+    <string name="geo_set_geo_enabled">Ustaw włączone GEO</string>
+    <string name="geo_get_geo_enabled">Pobierz ustawione GEO</string>
+    <string name="geo_update_location">Aktualizacja pozycji</string>>
+
+</resources>

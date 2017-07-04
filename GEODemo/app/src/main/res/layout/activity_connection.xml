@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_connection_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Status: No Product Connected"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/text_product_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp" />
+
+    <TextView
+        android:id="@+id/text_product_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:text="@string/product_information"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_btn"
+        android:text="Otwórz"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:layout_below="@+id/text_connection_status"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="@string/sdk_version"
+        android:textSize="15dp"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/text_connection_status"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="RUA-03"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_send_udp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewResult"
+        android:layout_centerHorizontal="true"
+        android:text="TEST" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="info"
+        android:layout_alignEnd="@+id/text_connection_status"
+        android:layout_alignStart="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editTextAdresIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_open"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="192.168.0.103"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textViewResult" />
+
+    <EditText
+        android:id="@+id/editTextPortUDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextAdresIP"
+        android:layout_below="@+id/editTextAdresIP"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="8040"
+        android:layout_alignEnd="@+id/editTextAdresIP" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextPortUDP"
+        android:layout_below="@+id/btn_open"
+        android:text="\nAdres IP:"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextPortUDP"
+        android:layout_below="@+id/editTextAdresIP"
+        android:text="\nPort UDP:"
+        android:layout_alignStart="@+id/text_product_info" />
+
+</RelativeLayout>
