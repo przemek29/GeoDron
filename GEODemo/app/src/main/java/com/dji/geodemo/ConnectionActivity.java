@@ -39,6 +39,7 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
 
     String ADRES_SERVER_PORT = "192.168.0.103";
     int UDP_SERVER_PORT = 8040;
+    String keyIdentifer = "ConnectionActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -198,7 +199,8 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
             case R.id.btn_open: {
                 runUdpClient();
                 Intent intent = new Intent(this, MainActivity.class);
-
+                String msg2Main = ADRES_SERVER_PORT + "," + String.valueOf(UDP_SERVER_PORT);
+                intent.putExtra(keyIdentifer,msg2Main);
                 startActivity(intent);
                 break;
             }

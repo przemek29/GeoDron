@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Build;
@@ -19,6 +20,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.drive.internal.StringListResponse;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -95,7 +97,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private final int limitCanUnlimitFillColor = Color.argb(40, 0xFF, 0xFF, 0x00);
     private FlyfrbBasePainter painter = new FlyfrbBasePainter();
 
+    String ADRES_SERVER_PORT = "192.168.0.103";
     int UDP_SERVER_PORT = 8040;
+    String keyIdentifer = "ConnectionActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,6 +124,20 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         setContentView(R.layout.activity_main);
 
         initUI();
+
+        /* Odbiór danych z okna pierwszego*/
+        Intent iin = getIntent();
+        Bundle b = iin.getExtras();
+        if(b != null)
+        {
+            String msg = (String) b.get(keyIdentifer);
+            String[] tab = msg.split(",");
+
+            ADRES_SERVER_PORT = tab[0];
+            UDP_SERVER_PORT = Integer.parseInt(tab[1]);
+
+        }
+
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -196,7 +214,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         DatagramSocket ds = null;
         try {
             ds = new DatagramSocket();
-            InetAddress serverAddr = InetAddress.getByName("192.168.43.149");
+            InetAddress serverAddr = InetAddress.getByName(ADRES_SERVER_PORT);
             DatagramPacket dp;
             dp = new DatagramPacket(udpMsg.getBytes(), udpMsg.length(), serverAddr, UDP_SERVER_PORT);
             ds.send(dp);
