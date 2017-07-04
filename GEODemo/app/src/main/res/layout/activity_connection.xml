@@ -9,14 +9,14 @@
         android:id="@+id/text_connection_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Status: No Product Connected"
-        android:textColor="@android:color/black"
-        android:textSize="20dp"
-        android:textStyle="bold"
         android:layout_alignBottom="@+id/text_product_info"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="89dp" />
+        android:layout_marginBottom="89dp"
+        android:gravity="center"
+        android:text="Status: Brak podłączonego produktu"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text_product_info"
@@ -80,8 +80,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="info"
-        android:layout_alignEnd="@+id/text_connection_status"
-        android:layout_alignStart="@+id/textView4" />
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignEnd="@+id/button_send_udp" />
 
     <EditText
         android:id="@+id/editTextAdresIP"
@@ -90,19 +90,17 @@
         android:layout_below="@+id/btn_open"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="192.168.0.103"
-        android:layout_alignStart="@+id/textView"
-        android:layout_alignEnd="@+id/textViewResult" />
+        android:text="192.168.43.193"
+        android:layout_alignEnd="@+id/text_connection_status" />
 
     <EditText
         android:id="@+id/editTextPortUDP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editTextAdresIP"
-        android:layout_below="@+id/editTextAdresIP"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="8040"
+        android:layout_below="@+id/editTextAdresIP"
         android:layout_alignEnd="@+id/editTextAdresIP" />
 
     <TextView
@@ -112,7 +110,7 @@
         android:layout_above="@+id/editTextPortUDP"
         android:layout_below="@+id/btn_open"
         android:text="\nAdres IP:"
-        android:layout_alignStart="@+id/textView4" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/textView4"
@@ -121,6 +119,6 @@
         android:layout_alignBottom="@+id/editTextPortUDP"
         android:layout_below="@+id/editTextAdresIP"
         android:text="\nPort UDP:"
-        android:layout_alignStart="@+id/text_product_info" />
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

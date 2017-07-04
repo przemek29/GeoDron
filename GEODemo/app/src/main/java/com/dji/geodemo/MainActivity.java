@@ -73,13 +73,13 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private ArrayList<Integer> unlockableIds = new ArrayList<Integer>();
 
     protected TextView mConnectStatusTextView;
-    private Button btnLogin;
+    /*private Button btnLogin;
     private Button btnLogout;
     private Button btnUnlock;
     private Button btnGetUnlock;
     private Button btnGetSurroundNFZ;
     private Button btnSetEnableGeoSystem;
-    private Button btnGetEnableGeoSystem;
+    private Button btnGetEnableGeoSystem;*/
     private Button btnUpdateLocation;
 
     private TextView loginStatusTv;
@@ -92,14 +92,16 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private LatLng latLng;
     private double droneLocationLat = 181, droneLocationLng = 181;
     float droneLocationAlt = 0;
+    int satelliteCount = 0;
     private ArrayList<Integer> unlockFlyZoneIds = new ArrayList<Integer>();
     private final int limitFillColor = Color.HSVToColor(120, new float[] {0, 1, 1});
     private final int limitCanUnlimitFillColor = Color.argb(40, 0xFF, 0xFF, 0x00);
     private FlyfrbBasePainter painter = new FlyfrbBasePainter();
 
-    String ADRES_SERVER_PORT = "192.168.0.103";
+    String ADRES_SERVER_PORT = "192.168.43.193";
     int UDP_SERVER_PORT = 8040;
     String keyIdentifer = "ConnectionActivity";
+    boolean pierwszeUruchomienie = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -240,7 +242,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 //The product is connected
                 MainActivity.this.runOnUiThread(new Runnable() {
                     public void run() {
-                        mConnectStatusTextView.setText(GEODemoApplication.getProductInstance().getModel() + " Connected");
+                        mConnectStatusTextView.setText(GEODemoApplication.getProductInstance().getModel() + " Połączono");
                     }
                 });
                 ret = true;
@@ -251,7 +253,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                         // The product is not connected, but the remote controller is connected
                         MainActivity.this.runOnUiThread(new Runnable() {
                             public void run() {
-                                mConnectStatusTextView.setText("only RC Connected");
+                                mConnectStatusTextView.setText("Połączono tylko RC");
                             }
                         });
                         ret = true;
@@ -265,7 +267,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
             MainActivity.this.runOnUiThread(new Runnable() {
                 public void run() {
-                    mConnectStatusTextView.setText("Disconnected");
+                    mConnectStatusTextView.setText("Rozłączono");
                 }
             });
         }
@@ -275,13 +277,13 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
         mConnectStatusTextView = (TextView) findViewById(R.id.ConnectStatusTextView);
 
-        btnLogin = (Button) findViewById(R.id.geo_login_btn);
+        /*btnLogin = (Button) findViewById(R.id.geo_login_btn);
         btnLogout = (Button) findViewById(R.id.geo_logout_btn);
         btnUnlock = (Button) findViewById(R.id.geo_unlock_nfzs_btn);
         btnGetUnlock = (Button) findViewById(R.id.geo_get_unlock_nfzs_btn);
         btnGetSurroundNFZ = (Button) findViewById(R.id.geo_get_surrounding_nfz_btn);
         btnSetEnableGeoSystem = (Button) findViewById(R.id.geo_set_geo_enabled_btn);
-        btnGetEnableGeoSystem = (Button) findViewById(R.id.geo_get_geo_enabled_btn);
+        btnGetEnableGeoSystem = (Button) findViewById(R.id.geo_get_geo_enabled_btn);*/
         btnUpdateLocation = (Button) findViewById(R.id.geo_update_location_btn);
 
         loginStatusTv = (TextView) findViewById(R.id.login_status);
@@ -289,13 +291,13 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         flyZonesTv = (TextView) findViewById(R.id.fly_zone_tv);
         flyZonesTv.setTextColor(Color.BLACK);
 
-        btnLogin.setOnClickListener(this);
+        /*btnLogin.setOnClickListener(this);
         btnLogout.setOnClickListener(this);
         btnUnlock.setOnClickListener(this);
         btnGetUnlock.setOnClickListener(this);
         btnGetSurroundNFZ.setOnClickListener(this);
         btnSetEnableGeoSystem.setOnClickListener(this);
-        btnGetEnableGeoSystem.setOnClickListener(this);
+        btnGetEnableGeoSystem.setOnClickListener(this);*/
         btnUpdateLocation.setOnClickListener(this);
 
         MainActivity.this.runOnUiThread(new Runnable() {
@@ -319,7 +321,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.geo_login_btn:
+            /*case R.id.geo_login_btn:
                 DJISDKManager.getInstance().getFlyZoneManager().logIntoDJIUserAccount(this,
                         new CommonCallbacks.CompletionCallbackWith<UserAccountState>() {
                             @Override
@@ -339,9 +341,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                             }
                         });
 
-                break;
+                break;*/
 
-            case R.id.geo_logout_btn:
+            /*case R.id.geo_logout_btn:
 
                 DJISDKManager.getInstance().getFlyZoneManager().logoutOfDJIUserAccount(new CommonCallbacks.CompletionCallback() {
                     @Override
@@ -360,9 +362,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                     }
                 });
 
-                break;
+                break;*/
 
-            case R.id.geo_unlock_nfzs_btn:
+            /*case R.id.geo_unlock_nfzs_btn:
 
                 final AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 final EditText input = new EditText(this);
@@ -413,9 +415,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                         });
 
                 builder.show();
-                break;
+                break;*/
 
-            case R.id.geo_get_unlock_nfzs_btn:
+            /*case R.id.geo_get_unlock_nfzs_btn:
 
                 DJISDKManager.getInstance().getFlyZoneManager().getUnlockedFlyZones(new CommonCallbacks.CompletionCallbackWith<ArrayList<FlyZoneInformation>>(){
                     @Override
@@ -436,7 +438,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 printSurroundFlyZones();
                 break;
 
-            case R.id.geo_update_location_btn:
+            */case R.id.geo_update_location_btn:
                 latLng = new LatLng(DataOsdGetPushCommon.getInstance().getLatitude(),
                         DataOsdGetPushCommon.getInstance().getLongitude());
                 if (latLng != null) {
@@ -468,7 +470,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                // }
                 break;
 
-            case R.id.geo_set_geo_enabled_btn:
+            /*case R.id.geo_set_geo_enabled_btn:
 
                 final AlertDialog.Builder setGEObuilder = new AlertDialog.Builder(this);
                 setGEObuilder.setTitle("Set GEO Enable");
@@ -514,9 +516,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                         });
 
                 setGEObuilder.show();
-                break;
+                break;*/
 
-            case R.id.geo_get_geo_enabled_btn:
+            /*case R.id.geo_get_geo_enabled_btn:
                 DJISDKManager.getInstance().getFlyZoneManager().getGEOSystemEnabled(new CommonCallbacks.CompletionCallbackWith<Boolean>() {
 
                     @Override
@@ -529,7 +531,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                         showToast(error.getDescription());
                     }
                 });
-                break;
+                break;*/
         }
     }
 
@@ -545,6 +547,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                         droneLocationLat = djiFlightControllerCurrentState.getAircraftLocation().getLatitude();
                         droneLocationLng = djiFlightControllerCurrentState.getAircraftLocation().getLongitude();
                         droneLocationAlt = djiFlightControllerCurrentState.getAircraftLocation().getAltitude();
+                        satelliteCount   = djiFlightControllerCurrentState.getSatelliteCount();
                         updateDroneLocation();
                     }
                 }
@@ -575,17 +578,24 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                         markerOptions.position(pos);
                         markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.dron));
 
-                        marker = mMap.addMarker(markerOptions);
+                        /*Przy pierwszym uruchomieniu odśwież mapę*/
+                        if(pierwszeUruchomienie)
+                        {
+                            marker = mMap.addMarker(markerOptions);
 
 
-                        latLng = new LatLng(DataOsdGetPushCommon.getInstance().getLatitude(),
-                        DataOsdGetPushCommon.getInstance().getLongitude());
+                            latLng = new LatLng(DataOsdGetPushCommon.getInstance().getLatitude(),
+                            DataOsdGetPushCommon.getInstance().getLongitude());
+                            pierwszeUruchomienie = false;
+                        }
 
 
                     //Instancje pol tekstowych rzutowane po nazwie
                     TextView szerGeo = (TextView) findViewById(R.id.textView_latitude);
                     TextView dlGeo = (TextView) findViewById(R.id.textView_longtitude);
                     TextView wys = (TextView) findViewById(R.id.textView_altitude);
+                    TextView sat = (TextView) findViewById(R.id.textViewSatelity);
+
                     //TextView wys = (TextView)findViewById(R.id.textView_altitude);
 
 
@@ -626,10 +636,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng paloAlto = new LatLng(37.453671, -122.118101);
+        LatLng fabryka = new LatLng(52.2341, 21.0913);
 
         mMap = googleMap;
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(paloAlto));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(fabryka));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(17.0f));
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             mMap.setMyLocationEnabled(true);
@@ -644,7 +654,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         DJISDKManager.getInstance().getFlyZoneManager().getFlyZonesInSurroundingArea(new CommonCallbacks.CompletionCallbackWith<ArrayList<FlyZoneInformation>>() {
             @Override
             public void onSuccess(ArrayList<FlyZoneInformation> flyZones) {
-                showToast("get surrounding Fly Zone Success!");
+                showToast("Odebrano poprawnie strefy lotów!");
                 updateFlyZonesOnTheMap(flyZones);
                 showSurroundFlyZonesInTv(flyZones);
             }
@@ -664,18 +674,18 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                 for (FlyZoneInformation flyZone : flyZones) {
                     if (flyZone != null && flyZone.getCategory() != null){
 
-                        sb.append("FlyZoneId: ").append(flyZone.getFlyZoneID()).append("\n");
-                        sb.append("Category: ").append(flyZone.getCategory().name()).append("\n");
-                        sb.append("Latitude: ").append(flyZone.getCoordinate().getLatitude()).append("\n");
-                        sb.append("Longitude: ").append(flyZone.getCoordinate().getLongitude()).append("\n");
-                        sb.append("FlyZoneType: ").append(flyZone.getFlyZoneType().name()).append("\n");
-                        sb.append("Radius: ").append(flyZone.getRadius()).append("\n");
-                        sb.append("Shape: ").append(flyZone.getShape().name()).append("\n");
-                        sb.append("StartTime: ").append(flyZone.getStartTime()).append("\n");
-                        sb.append("EndTime: ").append(flyZone.getEndTime()).append("\n");
-                        sb.append("UnlockStartTime: ").append(flyZone.getUnlockStartTime()).append("\n");
-                        sb.append("UnlockEndTime: ").append(flyZone.getUnlockEndTime()).append("\n");
-                        sb.append("Name: ").append(flyZone.getName()).append("\n");
+                        sb.append("Id strefy: ").append(flyZone.getFlyZoneID()).append("\n");
+                        sb.append("Kategoria: ").append(flyZone.getCategory().name()).append("\n");
+                        sb.append("Szer.Geo.: ").append(flyZone.getCoordinate().getLatitude()).append("\n");
+                        sb.append("Dł.Geo.: ").append(flyZone.getCoordinate().getLongitude()).append("\n");
+                        sb.append("Typ: ").append(flyZone.getFlyZoneType().name()).append("\n");
+                        sb.append("Promień: ").append(flyZone.getRadius()).append("\n");
+                        sb.append("Kształt: ").append(flyZone.getShape().name()).append("\n");
+                        sb.append("Początek: ").append(flyZone.getStartTime()).append("\n");
+                        sb.append("Koniec: ").append(flyZone.getEndTime()).append("\n");
+                        sb.append("(Odbl.Początek): ").append(flyZone.getUnlockStartTime()).append("\n");
+                        sb.append("(Odbl.Koniec): ").append(flyZone.getUnlockEndTime()).append("\n");
+                        sb.append("Nazwa: ").append(flyZone.getName()).append("\n");
                         sb.append("\n");
                     }
                 }

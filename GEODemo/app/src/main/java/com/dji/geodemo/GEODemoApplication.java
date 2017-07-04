@@ -79,7 +79,7 @@ public class GEODemoApplication extends Application {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(getApplicationContext(), "Register Success", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Rejestracja: Pomyślnie!", Toast.LENGTH_LONG).show();
                     }
                 });
             } else {
@@ -88,7 +88,7 @@ public class GEODemoApplication extends Application {
 
                     @Override
                     public void run() {
-                        Toast.makeText(getApplicationContext(), "register sdk fails, check network is available", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Błąd rejestracji. Sprawdź połączenie z siecią zewnętrzną.", Toast.LENGTH_LONG).show();
 
                     }
                 });
