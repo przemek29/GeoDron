@@ -1,5 +1,6 @@
 package com.dji.geodemo;
 
+
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -44,6 +45,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dji.common.error.DJIError;
+import dji.common.error.DJIRemoteControllerError;
 import dji.common.flightcontroller.FlightControllerState;
 import dji.common.flightcontroller.UserAccountState;
 import dji.common.flightcontroller.LocationCoordinate3D;
@@ -73,6 +75,8 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private ArrayList<Integer> unlockableIds = new ArrayList<Integer>();
 
     protected TextView mConnectStatusTextView;
+
+
     /*private Button btnLogin;
     private Button btnLogout;
     private Button btnUnlock;
@@ -92,7 +96,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private LatLng latLng;
     private double droneLocationLat = 181, droneLocationLng = 181;
     float droneLocationAlt = 0;
-    int satelliteCount = 0;
+
     private ArrayList<Integer> unlockFlyZoneIds = new ArrayList<Integer>();
     private final int limitFillColor = Color.HSVToColor(120, new float[] {0, 1, 1});
     private final int limitCanUnlimitFillColor = Color.argb(40, 0xFF, 0xFF, 0x00);
@@ -446,7 +450,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                     //Create MarkerOptions object
                     final MarkerOptions markerOptions = new MarkerOptions();
                     markerOptions.position(latLng);
-                    markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.dron));
+                    markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.dron_gif));
                     marker = mMap.addMarker(markerOptions);
                 }
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
@@ -547,7 +551,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                         droneLocationLat = djiFlightControllerCurrentState.getAircraftLocation().getLatitude();
                         droneLocationLng = djiFlightControllerCurrentState.getAircraftLocation().getLongitude();
                         droneLocationAlt = djiFlightControllerCurrentState.getAircraftLocation().getAltitude();
-                        satelliteCount   = djiFlightControllerCurrentState.getSatelliteCount();
+
                         updateDroneLocation();
                     }
                 }
@@ -576,25 +580,25 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                         //Create MarkerOptions object
                         final MarkerOptions markerOptions = new MarkerOptions();
                         markerOptions.position(pos);
-                        markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.dron));
+                        markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.dron_gif));
 
                         /*Przy pierwszym uruchomieniu odśwież mapę*/
-                        if(pierwszeUruchomienie)
-                        {
+                        //if(pierwszeUruchomienie)
+                        //{
                             marker = mMap.addMarker(markerOptions);
 
 
                             latLng = new LatLng(DataOsdGetPushCommon.getInstance().getLatitude(),
                             DataOsdGetPushCommon.getInstance().getLongitude());
-                            pierwszeUruchomienie = false;
-                        }
+                            //pierwszeUruchomienie = false;
+                        //}
 
 
                     //Instancje pol tekstowych rzutowane po nazwie
                     TextView szerGeo = (TextView) findViewById(R.id.textView_latitude);
                     TextView dlGeo = (TextView) findViewById(R.id.textView_longtitude);
                     TextView wys = (TextView) findViewById(R.id.textView_altitude);
-                    TextView sat = (TextView) findViewById(R.id.textViewSatelity);
+
 
                     //TextView wys = (TextView)findViewById(R.id.textView_altitude);
 
@@ -603,6 +607,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                     szerGeo.setText(String.valueOf(deg2dms(latLng.latitude)));
                     dlGeo.setText(String.valueOf(deg2dms(latLng.longitude)));
                     wys.setText(String.valueOf( droneLocationAlt));
+
 
                         runUdpClient(latLng.latitude, latLng.longitude, droneLocationAlt);
 
@@ -707,7 +712,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                     //Create MarkerOptions object
                     final MarkerOptions markerOptions = new MarkerOptions();
                     markerOptions.position(latLng);
-                    markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.dron));
+                    markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.dron_gif));
 
                     marker = mMap.addMarker(markerOptions);
                 }
