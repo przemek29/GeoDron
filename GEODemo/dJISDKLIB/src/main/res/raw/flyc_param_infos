@@ -2205,7 +2205,7 @@
 		"defaultValue" : 0,
 		"name" : "g_config.pantilt.roll_travel.travel_center_0"
 	},
-	{
+	{   
 		"index" : 221,
 		"typeID" : 6,
 		"size" : 4,

@@ -42,18 +42,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConnectionActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/ConnectionActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="41" column="47" selection-start-line="39" selection-start-column="4" selection-end-line="41" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider editor-type-id="text-editor">
@@ -67,93 +55,108 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dJISDKLIB/build.gradle">
+      <file leaf-file-name="activity_connection.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_connection.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectionActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/ConnectionActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="553" column="0" selection-start-line="553" selection-start-column="0" selection-end-line="553" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="226" column="46" selection-start-line="226" selection-start-column="46" selection-end-line="226" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1499259106374" expanded="false" signature="12146:12264" ph="() → {" />
-                <marker date="1499259106374" expanded="false" signature="12385:12424" ph="}" />
-                <marker date="1499259106374" expanded="false" signature="12844:12975" ph="(error) → {" />
-                <marker date="1499259106374" expanded="false" signature="13154:13264" ph="() → {" />
-                <marker date="1499259106374" expanded="false" signature="13367:13402" ph="}" />
-                <marker date="1499259106374" expanded="false" signature="13543:13566" ph="}" />
-                <marker date="1499259106374" expanded="false" signature="14138:14262" ph="(dialog, which) → {" />
-                <marker date="1499259106374" expanded="false" signature="15500:15687" ph="(error) → {" />
-                <marker date="1499259106374" expanded="false" signature="16180:16231" ph="}" />
-                <marker date="1499259106374" expanded="false" signature="16530:16561" ph="}" />
-                <marker date="1499259106374" expanded="false" signature="19353:19477" ph="(dialog, which) → {" />
-                <marker date="1499259106374" expanded="false" signature="19825:20007" ph="(djiError) → {" />
-                <marker date="1499259106374" expanded="false" signature="20407:20454" ph="}" />
-                <marker date="1499259106374" expanded="false" signature="20712:20907" ph="(error) → {" />
-                <marker date="1499259106374" expanded="false" signature="21349:21404" ph="}" />
-                <marker date="1499259106374" expanded="false" signature="21662:21693" ph="}" />
-                <marker date="1499259106374" expanded="false" signature="22040:22067" ph=" { " />
-                <marker date="1499259106374" expanded="false" signature="22098:22120" ph=" }" />
-                <marker date="1499259106374" expanded="false" signature="22209:22236" ph=" { " />
-                <marker date="1499259106374" expanded="false" signature="22270:22292" ph=" }" />
+                <marker date="1499758579811" expanded="false" signature="12370:12488" ph="() → {" />
+                <marker date="1499758579811" expanded="false" signature="12609:12648" ph="}" />
+                <marker date="1499758579811" expanded="false" signature="13068:13199" ph="(error) → {" />
+                <marker date="1499758579811" expanded="false" signature="13378:13488" ph="() → {" />
+                <marker date="1499758579811" expanded="false" signature="13591:13626" ph="}" />
+                <marker date="1499758579811" expanded="false" signature="13767:13790" ph="}" />
+                <marker date="1499758579811" expanded="false" signature="14362:14486" ph="(dialog, which) → {" />
+                <marker date="1499758579811" expanded="false" signature="15724:15911" ph="(error) → {" />
+                <marker date="1499758579811" expanded="false" signature="16404:16455" ph="}" />
+                <marker date="1499758579811" expanded="false" signature="16754:16785" ph="}" />
+                <marker date="1499758579811" expanded="false" signature="19577:19701" ph="(dialog, which) → {" />
+                <marker date="1499758579811" expanded="false" signature="20049:20231" ph="(djiError) → {" />
+                <marker date="1499758579811" expanded="false" signature="20631:20678" ph="}" />
+                <marker date="1499758579811" expanded="false" signature="20936:21131" ph="(error) → {" />
+                <marker date="1499758579811" expanded="false" signature="21573:21628" ph="}" />
+                <marker date="1499758579811" expanded="false" signature="21886:21917" ph="}" />
+                <marker date="1499758579811" expanded="false" signature="22264:22291" ph=" { " />
+                <marker date="1499758579811" expanded="false" signature="22322:22344" ph=" }" />
+                <marker date="1499758579811" expanded="false" signature="22433:22460" ph=" { " />
+                <marker date="1499758579811" expanded="false" signature="22494:22516" ph=" }" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataOsdGetPushCommon.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/midware/data/model/P3/DataOsdGetPushCommon.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="140" column="21" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GPSData.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/remotecontroller/GPSData.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dron.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/dron.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="FlightControllerState.class" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/flightcontroller/FlightControllerState.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="33" column="29" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="29" />
+            <state relative-caret-position="238">
+              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlightOrientationMode.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/flightcontroller/FlightOrientationMode.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flyforbid.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dJISDKLIB/src/main/res/raw/flyforbid.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="290230" selection-start-line="0" selection-start-column="290230" selection-end-line="0" selection-end-column="290230" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="R.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/dji/midware/R.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3944">
+              <caret line="237" column="81" selection-start-line="237" selection-start-column="81" selection-end-line="237" selection-end-column="81" />
               <folding>
-                <element signature="e#4974#4975#0" expanded="true" />
-                <element signature="e#5016#5017#0" expanded="true" />
+                <element signature="e#0#24742#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoHomeExecutionState.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/flightcontroller/GoHomeExecutionState.class">
+      <file leaf-file-name="flyc_param_infos" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dJISDKLIB/src/main/res/raw/flyc_param_infos">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="268">
+              <caret line="2207" column="8" selection-start-line="2207" selection-start-column="8" selection-end-line="2207" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -3251,11 +3254,12 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/ConnectionActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/GEODemoApplication.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_connection.xml" />
         <option value="$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/flightcontroller/LocationCoordinate3D.class" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/dJISDKLIB/src/main/res/raw/flyc_param_infos" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/ConnectionActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/MainActivity.java" />
       </list>
     </option>
@@ -3264,7 +3268,7 @@
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -3292,8 +3296,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -3310,6 +3312,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="GEODemo" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dJISDKLIB" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -3341,24 +3347,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GEODemo" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3411,6 +3399,8 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3758,12 +3748,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <frame x="1912" y="-8" width="1936" height="1092" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.48933902" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31203407" sideWeight="0.39392325" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21215352" sideWeight="0.41795665" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31122994" sideWeight="0.3859275" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21215352" sideWeight="0.45382166" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3312034" sideWeight="0.52558637" order="10" side_tool="false" content_ui="tabs" />
@@ -3773,9 +3763,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973504" sideWeight="0.4914712" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.4941349" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31203407" sideWeight="0.6060768" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21215352" sideWeight="0.58204335" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.45948827" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32834226" sideWeight="0.55117273" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21215352" sideWeight="0.54617834" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32834226" sideWeight="0.4488273" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.4941349" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3845,12 +3835,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/MainActivity.java</url>
-          <line>685</line>
+          <line>693</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/MainActivity.java</url>
-          <line>326</line>
+          <line>334</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -3860,27 +3850,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/import-summary.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/error/DJISDKError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/sdk/sdkmanager/DJISDKManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
@@ -3975,13 +3944,6 @@
     </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-23/android.jar!/java/net/DatagramPacket.class" />
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-23/android.jar!/java/net/DatagramSocket.class" />
-    <entry file="file://$PROJECT_DIR$/dJISDKLIB/src/main/res/raw/flyc_param_infos">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="2125" column="49" selection-start-line="2125" selection-start-column="49" selection-end-line="2125" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/dji/geodemo/BuildConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -4003,7 +3965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4061,13 +4022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="9" column="30" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#568#569#0" expanded="false" />
-            <element signature="e#605#606#0" expanded="false" />
-            <element signature="e#646#647#0" expanded="false" />
-            <element signature="e#686#687#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4075,7 +4029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4091,7 +4044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4539">
           <caret line="473" column="5" selection-start-line="473" selection-start-column="5" selection-end-line="473" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4099,6 +4051,90 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
           <caret line="90" column="122" selection-start-line="90" selection-start-column="122" selection-end-line="90" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/dron.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/flightcontroller/GoHomeExecutionState.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/remotecontroller/GPSData.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/midware/data/model/P3/DataOsdGetPushCommon.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="140" column="21" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dJISDKLIB/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dJISDKLIB/src/main/res/raw/flyforbid.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="290230" selection-start-line="0" selection-start-column="290230" selection-end-line="0" selection-end-column="290230" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/flightcontroller/LocationCoordinate3D.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/dji/midware/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3944">
+          <caret line="237" column="81" selection-start-line="237" selection-start-column="81" selection-end-line="237" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#24742#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/flightcontroller/FlightOrientationMode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/flightcontroller/FlightControllerState.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dJISDKLIB/src/main/res/raw/flyc_param_infos">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="2207" column="8" selection-start-line="2207" selection-start-column="8" selection-end-line="2207" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -4114,64 +4150,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/flightcontroller/LocationCoordinate3D.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/ConnectionActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="41" column="47" selection-start-line="39" selection-start-column="4" selection-end-line="41" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/dron.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/flightcontroller/GoHomeExecutionState.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/flightcontroller/FlightControllerState.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="29" />
-          <folding>
-            <element signature="e#4974#4975#0" expanded="true" />
-            <element signature="e#5016#5017#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/common/remotecontroller/GPSData.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/dJISDKLIB/libs/dji-sdk.jar!/dji/midware/data/model/P3/DataOsdGetPushCommon.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="140" column="21" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -4183,41 +4161,41 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dJISDKLIB/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="226" column="46" selection-start-line="226" selection-start-column="46" selection-end-line="226" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1499758579811" expanded="false" signature="12370:12488" ph="() → {" />
+            <marker date="1499758579811" expanded="false" signature="12609:12648" ph="}" />
+            <marker date="1499758579811" expanded="false" signature="13068:13199" ph="(error) → {" />
+            <marker date="1499758579811" expanded="false" signature="13378:13488" ph="() → {" />
+            <marker date="1499758579811" expanded="false" signature="13591:13626" ph="}" />
+            <marker date="1499758579811" expanded="false" signature="13767:13790" ph="}" />
+            <marker date="1499758579811" expanded="false" signature="14362:14486" ph="(dialog, which) → {" />
+            <marker date="1499758579811" expanded="false" signature="15724:15911" ph="(error) → {" />
+            <marker date="1499758579811" expanded="false" signature="16404:16455" ph="}" />
+            <marker date="1499758579811" expanded="false" signature="16754:16785" ph="}" />
+            <marker date="1499758579811" expanded="false" signature="19577:19701" ph="(dialog, which) → {" />
+            <marker date="1499758579811" expanded="false" signature="20049:20231" ph="(djiError) → {" />
+            <marker date="1499758579811" expanded="false" signature="20631:20678" ph="}" />
+            <marker date="1499758579811" expanded="false" signature="20936:21131" ph="(error) → {" />
+            <marker date="1499758579811" expanded="false" signature="21573:21628" ph="}" />
+            <marker date="1499758579811" expanded="false" signature="21886:21917" ph="}" />
+            <marker date="1499758579811" expanded="false" signature="22264:22291" ph=" { " />
+            <marker date="1499758579811" expanded="false" signature="22322:22344" ph=" }" />
+            <marker date="1499758579811" expanded="false" signature="22433:22460" ph=" { " />
+            <marker date="1499758579811" expanded="false" signature="22494:22516" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dji/geodemo/ConnectionActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="553" column="0" selection-start-line="553" selection-start-column="0" selection-end-line="553" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1499259106374" expanded="false" signature="12146:12264" ph="() → {" />
-            <marker date="1499259106374" expanded="false" signature="12385:12424" ph="}" />
-            <marker date="1499259106374" expanded="false" signature="12844:12975" ph="(error) → {" />
-            <marker date="1499259106374" expanded="false" signature="13154:13264" ph="() → {" />
-            <marker date="1499259106374" expanded="false" signature="13367:13402" ph="}" />
-            <marker date="1499259106374" expanded="false" signature="13543:13566" ph="}" />
-            <marker date="1499259106374" expanded="false" signature="14138:14262" ph="(dialog, which) → {" />
-            <marker date="1499259106374" expanded="false" signature="15500:15687" ph="(error) → {" />
-            <marker date="1499259106374" expanded="false" signature="16180:16231" ph="}" />
-            <marker date="1499259106374" expanded="false" signature="16530:16561" ph="}" />
-            <marker date="1499259106374" expanded="false" signature="19353:19477" ph="(dialog, which) → {" />
-            <marker date="1499259106374" expanded="false" signature="19825:20007" ph="(djiError) → {" />
-            <marker date="1499259106374" expanded="false" signature="20407:20454" ph="}" />
-            <marker date="1499259106374" expanded="false" signature="20712:20907" ph="(error) → {" />
-            <marker date="1499259106374" expanded="false" signature="21349:21404" ph="}" />
-            <marker date="1499259106374" expanded="false" signature="21662:21693" ph="}" />
-            <marker date="1499259106374" expanded="false" signature="22040:22067" ph=" { " />
-            <marker date="1499259106374" expanded="false" signature="22098:22120" ph=" }" />
-            <marker date="1499259106374" expanded="false" signature="22209:22236" ph=" { " />
-            <marker date="1499259106374" expanded="false" signature="22270:22292" ph=" }" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>

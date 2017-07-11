@@ -40,6 +40,7 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
     String ADRES_SERVER_PORT = "192.168.0.103";
     int UDP_SERVER_PORT = 8040;
     String keyIdentifer = "ConnectionActivity";
+    int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,7 +107,13 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
         ADRES_SERVER_PORT = adres.getText().toString();
         UDP_SERVER_PORT = Integer.parseInt(port.getText().toString());
 
-        String udpMsg = "12039.423423,52.21345,20.3414132,100.31";
+        if(count <= 255)
+            count++;
+        else
+            count = 0;
+
+        //Paczka w postaci: Licznik, Nazwa, Czas, Long, Lat, Alt;
+        String udpMsg = String.valueOf(count)+",Nazwa_Urządzenia,12039.423423,52.21345,20.3414132,100.31";
         DatagramSocket ds = null;
         try {
             ds = new DatagramSocket();

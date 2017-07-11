@@ -106,6 +106,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     int UDP_SERVER_PORT = 8040;
     String keyIdentifer = "ConnectionActivity";
     boolean pierwszeUruchomienie = true;
+    int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -216,7 +217,14 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private void runUdpClient(double lat, double longt, double alt)  {
         long time= System.currentTimeMillis();
 
-        String udpMsg = time + "," + String.valueOf(lat) + "," + String.valueOf(longt) + "," + String.valueOf(alt) ;//"hello world from UDP client " + UDP_SERVER_PORT;
+        String deviceName = mConnectStatusTextView.getText().toString();
+
+        if (count <= 255)
+            count++;
+        else
+            count = 0;
+
+        String udpMsg =String.valueOf(count)+ "," + deviceName + "," + time + "," + String.valueOf(lat) + "," + String.valueOf(longt) + "," + String.valueOf(alt) ;//"hello world from UDP client " + UDP_SERVER_PORT;
         DatagramSocket ds = null;
         try {
             ds = new DatagramSocket();
