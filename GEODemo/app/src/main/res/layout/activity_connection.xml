@@ -87,11 +87,11 @@
         android:id="@+id/editTextAdresIP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_connection_status"
         android:layout_below="@+id/btn_open"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="192.168.43.193"
-        android:layout_alignEnd="@+id/text_connection_status" />
+        android:text="192.168.43.149" />
 
     <EditText
         android:id="@+id/editTextPortUDP"

@@ -217,14 +217,16 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private void runUdpClient(double lat, double longt, double alt)  {
         long time= System.currentTimeMillis();
 
-        String deviceName = mConnectStatusTextView.getText().toString();
+        String deviceName = GEODemoApplication.getProductInstance().getModel().toString();
+        String serialNumber = "1234";
+        String operatorName = "Jarząb_1";
 
         if (count <= 255)
             count++;
         else
             count = 0;
 
-        String udpMsg =String.valueOf(count)+ "," + deviceName + "," + time + "," + String.valueOf(lat) + "," + String.valueOf(longt) + "," + String.valueOf(alt) ;//"hello world from UDP client " + UDP_SERVER_PORT;
+        String udpMsg =String.valueOf(count)+ "," + deviceName + "," + serialNumber + "," + operatorName + "," + time + "," + String.valueOf(lat) + "," + String.valueOf(longt) + "," + String.valueOf(alt) ;//"hello world from UDP client " + UDP_SERVER_PORT;
         DatagramSocket ds = null;
         try {
             ds = new DatagramSocket();
@@ -612,8 +614,8 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
 
                     //Wpisanie do pol tekstowych danych z gory
-                    szerGeo.setText(String.valueOf(deg2dms(latLng.latitude)));
-                    dlGeo.setText(String.valueOf(deg2dms(latLng.longitude)));
+                    szerGeo.setText(String.valueOf((latLng.latitude)));
+                    dlGeo.setText(String.valueOf((latLng.longitude)));
                     wys.setText(String.valueOf( droneLocationAlt));
 
 

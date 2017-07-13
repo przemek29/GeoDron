@@ -113,7 +113,7 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
             count = 0;
 
         //Paczka w postaci: Licznik, Nazwa, Czas, Long, Lat, Alt;
-        String udpMsg = String.valueOf(count)+",Nazwa_Urządzenia,12039.423423,52.21345,20.3414132,100.31";
+        String udpMsg = String.valueOf(count)+",Nazwa_Urządzenia,Numer_seryjny,Nazwa_operatora,12039.423423,52.21345,20.3414132,100.31";
         DatagramSocket ds = null;
         try {
             ds = new DatagramSocket();
