@@ -95,7 +95,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private MarkerOptions markerOptions = new MarkerOptions();
     private LatLng latLng;
     private double droneLocationLat = 181, droneLocationLng = 181;
-    float droneLocationAlt = 0;
+    private float droneLocationAlt = 0;
+    private float dronHeading = 0;
+    private double satelliteCount = 0;
+    private float velocityX, velocityY, velocityZ;
 
     private ArrayList<Integer> unlockFlyZoneIds = new ArrayList<Integer>();
     private final int limitFillColor = Color.HSVToColor(120, new float[] {0, 1, 1});
@@ -214,7 +217,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         return res;
     }
 
-    private void runUdpClient(double lat, double longt, double alt)  {
+    private void runUdpClient(double lat, double longt, double alt, float heading, double satelliteCount, float velocityX, float velocityY, float velocityZ)  {
         long time= System.currentTimeMillis();
 
         String deviceName = GEODemoApplication.getProductInstance().getModel().toString();
@@ -226,7 +229,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         else
             count = 0;
 
-        String udpMsg =String.valueOf(count)+ "," + deviceName + "," + serialNumber + "," + operatorName + "," + time + "," + String.valueOf(lat) + "," + String.valueOf(longt) + "," + String.valueOf(alt) ;//"hello world from UDP client " + UDP_SERVER_PORT;
+        String udpMsg =String.valueOf(count)+ "," + deviceName + "," + serialNumber + "," + operatorName + "," + time + "," + String.valueOf(lat) + "," + String.valueOf(longt) + "," + String.valueOf(alt) + "," + String.valueOf(heading) + "," + String.valueOf(satelliteCount) + "," + String.valueOf(velocityX) + "," + String.valueOf(velocityY) + "," + String.valueOf(velocityZ                                                                  )  ;//"hello world from UDP client " + UDP_SERVER_PORT;
         DatagramSocket ds = null;
         try {
             ds = new DatagramSocket();
@@ -561,7 +564,11 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                         droneLocationLat = djiFlightControllerCurrentState.getAircraftLocation().getLatitude();
                         droneLocationLng = djiFlightControllerCurrentState.getAircraftLocation().getLongitude();
                         droneLocationAlt = djiFlightControllerCurrentState.getAircraftLocation().getAltitude();
-
+                        dronHeading = mFlightController.getCompass().getHeading();
+                        satelliteCount = mFlightController.getState().getSatelliteCount();
+                        velocityX = mFlightController.getState().getVelocityX();
+                        velocityY = mFlightController.getState().getVelocityY();
+                        velocityZ = mFlightController.getState().getVelocityZ();
                         updateDroneLocation();
                     }
                 }
@@ -619,7 +626,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                     wys.setText(String.valueOf( droneLocationAlt));
 
 
-                        runUdpClient(latLng.latitude, latLng.longitude, droneLocationAlt);
+                        runUdpClient(latLng.latitude, latLng.longitude, droneLocationAlt, dronHeading, satelliteCount, velocityX, velocityY, velocityZ);
 
 
                         //------------------------------------------------------
